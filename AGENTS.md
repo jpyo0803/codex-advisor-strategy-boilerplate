@@ -32,6 +32,10 @@ directly. Size alone does not justify delegation. Avoid spawning a child just to
 wait for it when no useful independent work remains. Never duplicate an agent's
 whole task while it runs. Do not delegate recursively.
 
+Use `deep-thinker` only for difficult architecture decisions or persistent root
+causes after a focused local investigation has not resolved the issue. Do not use
+it for routine implementation, simple debugging, or straightforward code review.
+
 ## Advisor checkpoints
 
 Seek an independent advisor review before an expensive-to-reverse design choice,
