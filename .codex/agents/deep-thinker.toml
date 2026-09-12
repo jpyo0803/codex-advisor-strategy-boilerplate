@@ -1,7 +1,7 @@
 name = "deep-thinker"
 description = "Analyze difficult architecture tradeoffs and persistent root causes using code evidence."
 model = "gpt-6-astra"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "light"
 sandbox_mode = "read-only"
 developer_instructions = """
 Analyze the assigned hard problem without modifying files. State the objective and

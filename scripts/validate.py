@@ -12,8 +12,8 @@ expected = {
     "docs-researcher": ("gpt-5.6-luna", "low", True),
     "test-runner": ("gpt-5.6-luna", "low", False),
     "implementer": ("gpt-5.6-terra", "medium", False),
-    "deep-thinker": ("gpt-6-astra", "medium", True),
-    "advisor": ("gpt-6-astra", "medium", True),
+    "deep-thinker": ("gpt-6-astra", "light", True),
+    "advisor": ("gpt-6-astra", "light", True),
 }
 files = sorted((root / ".codex/agents").glob("*.toml"))
 assert {p.stem for p in files} == set(expected)
