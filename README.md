@@ -11,7 +11,7 @@
 | 메인 | `gpt-6-astra` | medium |
 | `code-searcher`, `docs-researcher`, `test-runner` | `gpt-5.6-luna` | low |
 | `implementer` | `gpt-5.6-terra` | medium |
-| `deep-thinker`, `advisor` | `gpt-6-astra` | high |
+| `deep-thinker`, `advisor` | `gpt-6-astra` | medium |
 
 모델 ID는 이 작업 환경에서 제공된 모델 목록을 기준으로 정했습니다. 다른 계정이나
 클라이언트에서는 제공 여부를 확인하고 설정 파일에서 변경하세요. 가장 저렴한 모델이라는
