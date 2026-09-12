@@ -4,6 +4,7 @@ import tomllib
 
 root = Path(__file__).resolve().parents[1]
 config = tomllib.loads((root / ".codex/config.toml").read_text(encoding="utf-8"))
+assert (config["model"], config["model_reasoning_effort"]) == ("gpt-5.6-sol", "medium")
 assert config["agents"]["enabled"] is True
 assert config["agents"]["max_concurrent_threads_per_session"] == 3
 policy = (root / "AGENTS.md").read_text(encoding="utf-8")
@@ -12,8 +13,8 @@ expected = {
     "docs-researcher": ("gpt-5.6-luna", "low", True),
     "test-runner": ("gpt-5.6-luna", "low", False),
     "implementer": ("gpt-5.6-terra", "medium", False),
-    "deep-thinker": ("gpt-6-astra", "light", True),
-    "advisor": ("gpt-6-astra", "light", True),
+    "deep-thinker": ("gpt-5.6-sol", "medium", True),
+    "advisor": ("gpt-5.6-sol", "medium", True),
 }
 files = sorted((root / ".codex/agents").glob("*.toml"))
 assert {p.stem for p in files} == set(expected)
